@@ -1,0 +1,92 @@
+/* grow */
+.flex-container.grow > .one {
+  flex-grow: 1;
+}
+.flex-container.grow > .three {
+  flex-grow: 2;
+}
+
+/*shrink*/
+
+.flex-container.shrink1 > .flex-item {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.flex-container.shrink2 > .flex-item {
+  width: 250px;
+}
+.flex-container.shrink2 > .flex-item:first-child {
+  flex-shrink: 0;
+}
+
+.flex-container.flexBasic > .flex-item {
+  width: 60px;
+}
+
+.flex-container.flexBasic2 {
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+.flex-container.flexBasic2 > .flex-item {
+  width: 60px;
+}
+
+.flex-container.flexBasic3 {
+  flex-direction: column;
+}
+
+.flex-container.flexBasic3 > .flex-item {
+  flex-basis: 30px;
+  flex-shrink: 0;
+}
+
+/* Три атрибута */
+.flex-container.threeAtribute1 > .flex-item {
+  flex: 0 0 auto;
+}
+.flex-container.threeAtribute2 > .flex-item {
+  flex: 1 0 auto;
+}
+.flex-container.threeAtribute3 > .flex-item {
+  flex: 1 1 auto;
+}
+
+.flex-container.threeAtribute4 > .flex-item {
+  flex: 1 1 auto;
+}
+.flex-container.threeAtribute4 > .flex-item:first-child {
+  flex: 2 1 auto;
+}
+.flex-container.threeAtribute5 > .flex-item {
+  flex: none;
+}
+
+.flex-container.threeAtribute6 .flex-item:nth-of-type(1) {
+  flex: 1 1 0%;
+}
+.flex-container.threeAtribute6 .flex-item:nth-of-type(2) {
+  flex: 4 1 0%;
+}
+
+/* Align Self */
+
+.flex-container.alignSelf {
+  height: 150px;
+}
+.flex-container.alignSelf > .flex-item:first-child {
+  align-self: start;
+}
+.flex-container.alignSelf > .flex-item:nth-of-type(2) {
+  align-self: flex-end;
+}
+.flex-container.alignSelf > .flex-item:nth-of-type(3) {
+  align-self: center;
+}
+
+/* .flex-container.test .flex-item:nth-of-type(3) {
+  flex: 1 1 0%;
+}
+.flex-container.test .flex-item:nth-of-type(4) {
+  flex: 1 1 0%;
+} */

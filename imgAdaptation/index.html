@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Контент -->
+      <div class="content">
+        <section class="text">
+          <h2 class="text__title title">В тексте</h2>
+          <div class="text__image">
+            <picture>
+              <source
+                srcset="img/1300x400.jpg"
+                type="image/jpeg"
+                media="(min-width:1330px)"
+              />
+              <source
+                srcset="img/800x400.jpg"
+                type="image/jpeg"
+                media="(min-width:992px)"
+              />
+              <source
+                srcset="img/400x600.jpg"
+                type="image/jpeg"
+                media="(max-width:992px)"
+              />
+              <img src="img/1300x400.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="text__value">
+            <p>
+              Задаем max-width для адаптации картинки с умешьением эркана, и
+              маленкие картинки растягиваються строкого на свою ширина, и при
+              уменьшении экарана так же уменьшаються
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+              ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+              quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+              nesciunt adipisci.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+              ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+              quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+              nesciunt adipisci.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+              ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+              quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+              nesciunt adipisci.
+            </p>
+          </div>
+          <div class="text__image">
+            <img src="img/800x400.jpg" alt="" />
+          </div>
+          <div class="text__value">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+              ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+              quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+              nesciunt adipisci.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+              ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+              quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+              nesciunt adipisci.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+              ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+              quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+              nesciunt adipisci.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+              ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+              quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+              nesciunt adipisci.
+            </p>
+          </div>
+        </section>
+        <section class="cards">
+          <h2 class="cards__title title">В карточках (три колонки)</h2>
+          <p>
+            Свойство object-fit 
+            <p> Свойство object-fit определяет, каким образом
+            содержимое замещаемых элементов будет подогнано к краям контейнера
+            тега в случае, когда для элемента заданы ширина и высота, отличные
+            от его собственных размеров.</p>
+
+            <p><b>fill</b> Значение по умолчанию. Содержимое
+            замещаемого элемента полностью заполняет область контейнера тега,
+            используя его высоту и ширину.</p>
+            <p><b > contain</b> Содержимое элемента
+            масштабируется, выравниваясь по центру с сохранением пропорций таким
+            образом, чтобы полностью поместиться внутри контейнера. cover
+            Содержимое элемента обрезается, выравниваясь по центру с сохранением
+            пропорций таким образом, чтобы полностью заполнить область
+            контейнера.</p> 
+             scale-down Содержимое элемента выбирает из двух значений
+            none и contain то значение, которое даёт меньшие размеры. none
+            Замещаемое содержимое не изменяет свои собственные размеры, чтобы
+            поместиться и заполнить область контейнера. initial Устанавливает
+            это свойство в значение по умолчанию. inherit Наследует значение
+            свойства от родительского элемента.
+          </p>
+          <br>
+          <p>Свойство object-position
+            Свойство object-position используется в сочетании с object-fit и задаёт положение содержимого замещаемого элемента внутри контейнера 
+            относительно координатных осей X и Y. Значение по умолчанию 50% 50%. </p>
+            <br>
+          <div class="cards__row">
+            <div class="cards__column">
+              <div class="cards__item">
+                <div class="cards__image">
+                  <img src="img/800x400.jpg" alt="" />
+                </div>
+                <div class="cards__body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                  corrupti a voluptatibus autem eaque aut nisi quis ex sequi!
+                  Ducimus necessitatibus deleniti mollitia ex dignissimos odio
+                  obcaecati totam est nesciunt?
+                </div>
+              </div>
+            </div>
+            <div class="cards__column">
+              <div class="cards__item">
+                <div class="cards__image">
+                  <img src="img/400x600.jpg" alt="" />
+                </div>
+                <div class="cards__body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                  corrupti a voluptatibus autem eaque aut nisi quis ex sequi!
+                  Ducimus necessitatibus deleniti mollitia ex dignissimos odio
+                  obcaecati totam est nesciunt? Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Nam corrupti a voluptatibus
+                  autem eaque aut nisi quis ex sequi! Ducimus necessitatibus
+                  deleniti mollitia ex dignissimos odio obcaecati totam est
+                  nesciunt?
+                </div>
+              </div>
+            </div>
+            <div class="cards__column">
+              <div class="cards__item">
+                <div class="cards__image">
+                  <img src="img/1300x200.jpg" alt="" />
+                </div>
+                <div class="cards__body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                  corrupti a voluptatibus autem eaque aut nisi quis ex sequi!
+                  Ducimus necessitatibus deleniti mollitia ex dignissimos odio
+                  obcaecati totam est nesciunt?
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="items">
+          <h2 class="items__title title">В карточках (в ряд)</h2>
+          <div class="items__item">
+            <div class="items__image">
+              <img src="img/1300x400.jpg" alt="" />
+            </div>
+            <div class="items__body">
+              <div class="items__label">Заголовок</div>
+              <div class="items__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem
+                magni perferendis sequi distinctio veritatis, accusantium, unde
+                modi repellendus nostrum ut fuga.
+              </div>
+            </div>
+          </div>
+          <div class="items__item">
+            <div class="items__image">
+              <img src="img/400x600.jpg" alt="" />
+            </div>
+            <div class="items__body">
+              <div class="items__label">Заголовок</div>
+              <div class="items__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem
+                magni perferendis sequi distinctio veritatis, accusantium, unde
+                modi repellendus nostrum ut fuga. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Sapiente quam tempore ea animi quo
+                nemo quasi quaerat voluptatem magni perferendis sequi distinctio
+                veritatis, accusantium, unde modi repellendus nostrum ut fuga.
+              </div>
+            </div>
+          </div>
+          <div class="items__item">
+            <div class="items__image">
+              <img src="img/800x400.jpg" alt="" />
+            </div>
+            <div class="items__body">
+              <div class="items__label">Заголовок</div>
+              <div class="items__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem
+                magni perferendis sequi distinctio veritatis, accusantium, unde
+                modi repellendus nostrum ut fuga.
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

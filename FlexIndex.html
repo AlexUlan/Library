@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./itemStyle.css" />
+    <link rel="stylesheet" href="./flexStyle.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+   
+    <div class="wrapper">
+      <h2>Grow</h2>
+      <div class="flex-wrapper">
+        <span class="flex-desription">
+          Свободное пространство 740px 1 часть свободного около 246px</span
+        >
+        <div class="flex-container grow">
+          <div class="flex-item one">
+            1 (1 grow)
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3 (2 grow)
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+      <h2>Shrink</h2>
+      <div class="flex-wrapper">
+        <p class="flex-desription">
+          Shrink запрещаем эл. сужаться при заданной ширине </br>
+          <code>flex-shrink: 0</code> - сужение запрещено </br>
+          <code>flex-shrink: 1</code> - сужение разрешено
+        </p>
+        <div class="flex-container shrink1">
+          <div class="flex-item one">
+            1 (250px - width)
+          </div>
+          <div class="flex-item two">
+            2 (250px - width)
+          </div>
+          <div class="flex-item three">
+            3 (250px - width)
+          </div>
+          <div class="flex-item four">
+            4 (250px - width)
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-wrapper">
+        <span class="flex-desription">
+          Shrink запрещаем сужаться первому элементу, он двигает ост.
+        </span>
+        <div class="flex-container shrink2">
+          <div class="flex-item one">
+            1 (flex-shrink: 0)
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+
+      <h2>Flex-Basic</h2>
+      <div class="flex-wrapper">
+        <br class="flex-desription">
+        width строго 60px 
+        </span>
+        <div class="flex-container flexBasic">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-wrapper">
+        <br class="flex-desription">
+          Смена main line <code>flex-direction: column</code> width строго 60px </br>
+          
+        </span>
+        <div class="flex-container flexBasic2">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-wrapper">
+        <p class="flex-desription">
+          При зменении main line с  Flex Basic элементы расятгиваются и height страновиться Flex Basic  <code>flex-basis: 30px</code></p>
+                </span>
+        <div class="flex-container flexBasic3">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+
+      <h2>Flex exemple 3 atribute</h2>
+      <h3>flex:  0 1 auto;<br>
+        0 - Grow; <br>
+        1 - Shrink; <br>
+        auto - flex-basis; 
+        <br>
+        <p>
+        Flex-auto:
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+      </p>
+        <p>
+        Flex-initial:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+      </p>
+        <p>
+        Flex-none:
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+      </p>
+      </h3>
+      <div class="flex-wrapper">
+        <p class="flex-desription">
+          <code> flex: 0 0 auto;</code>
+        </span>
+        <div class="flex-container threeAtribute1">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-wrapper">
+        <p class="flex-desription">
+          <code> flex: 1 0 auto;</code>
+        </span>
+        <div class="flex-container threeAtribute2">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-wrapper">
+        <p class="flex-desription">
+          <code> flex: 1 1 auto;</code>
+        </span>
+        <div class="flex-container threeAtribute3">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+      <div class="flex-wrapper">
+        <p class="flex-desription">
+          <code> flex: 2 1 auto; для первого элемента</code>
+        </span>
+        <div class="flex-container threeAtribute4">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-wrapper">
+        <p class="flex-desription">
+          <code> flex: 2 1 auto; для первого элемента</code>
+        </span>
+        <div class="flex-container threeAtribute5">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-wrapper">
+        <p class="flex-desription">
+          Пространство будет поделенно пропорционально частям указаным в Grow
+          <code> flex: 1 1 0%; для первого элемента</code>
+          <code> flex: 4 1 0%; для Второго элемента элемента</code>
+        </span>
+        <div class="flex-container threeAtribute6">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+ 
+        </div>
+      </div>
+
+      <div class="flex-wrapper">
+        <h2>Align Self</h2>
+        <p class="flex-desription">
+          Прижат к верху: <code>align-self: start;</code>   <bR>
+          Прижат к низу: <code> align-self: flex-end; </code><bR>
+          Центер: <code> align-self: center; </code><bR>
+        </span>
+        <div class="flex-container alignSelf">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+          <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex-wrapper">
+        <p class="flex-desription">
+          <code>test</code>
+        </span>
+        <div class="flex-container test">
+          <div class="flex-item one">
+            1 
+          </div>
+          <div class="flex-item two">
+            2
+          </div>
+<!--           <div class="flex-item three">
+            3
+          </div>
+          <div class="flex-item four">
+            4
+          </div> -->
+        </div>
+      </div>
+
+      <div class="flex-wrapper">
+        <h2>Создание скелета сайта с резиновым мейном на всю страницу</h2>
+        <code>
+          html,body{height100%;} </br>
+          body{display:flex; flex-desription:column} </br>
+          main{flex:1 1 0%} </br>
+        </code>
+      </div>
+
+    </div>
+  </body>
+</html>

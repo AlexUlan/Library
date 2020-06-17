@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.card-list .card > footer,
+.card-list .card > header {
+  border: 0;
+}
+
+.card {
+  border: 2px solid blue;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 0 400px;
+}
+
+.card-list .card > header {
+  background-color: blue;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.card footer > button {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.card-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card header,
+.card footer {
+  flex: 0 0 0%;
+}
+.card-body {
+  flex: 1 0 0%;
+}
